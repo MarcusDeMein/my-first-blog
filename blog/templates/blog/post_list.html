@@ -1,25 +1,11 @@
-<html>
-    <head>
-        <title>Marcus</title>
-    </head>
-    <body>
-        <div>
-          <h1><a href="/">Aidyn Sucks</a></h1>
-        </div>
-        <div>
-            <h1><a href="/">Marcus</a></h1>
-        </div>
+<div>
+    <h1><a href="/">Marcus's Blog</a></h1>
+</div>
 
-        <div>
-            <p>Birth day : 28.04.2018, 00:01</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Hellow, World!</p>
-        </div>
-
-        <div>
-            <p>published: 03.12.2017, 23:27</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Bye-Bye, World!</p>
-        </div>
-    </body>
-</html>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
