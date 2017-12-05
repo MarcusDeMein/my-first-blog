@@ -38,9 +38,9 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    color: #0008FF;
+    color: #FCA205;
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #0008FF;
+    color: #FCA205;
 }
